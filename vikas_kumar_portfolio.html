@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikas Kumar Choudhary | Political Strategist & Founder, V SCAN Alliance</title>
+<meta name="description" content="Vikas Kumar Choudhary is a political strategist, governance thinker, and Founder & CEO of V SCAN Alliance. Expert in data-driven campaigns across 10+ Indian states.">
+<meta name="keywords" content="Vikas Kumar Choudhary, V SCAN Alliance, political consultant India, political strategist, governance consultant, election strategy India, VSCAN">
+<meta property="og:title" content="Vikas Kumar Choudhary | Political Strategist & Founder V SCAN Alliance">
+<meta property="og:description" content="Founder & CEO of V SCAN Alliance — a next-generation political consulting firm committed to accountable governance and citizen-first leadership.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0a1628;
+    --navy2: #112240;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --cream: #f5f0e8;
+    --off-white: #faf8f4;
+    --text-muted: #6b7280;
+    --border: rgba(201,168,76,0.25);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--navy);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,22,40,0.97);
+    backdrop-filter: blur(10px);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.05) 0%, transparent 50%);
+    color: white;
+    padding: 80px 2rem 90px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      rgba(201,168,76,0.03) 60px,
+      rgba(201,168,76,0.03) 61px
+    );
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 span { color: var(--gold-light); }
+
+  .hero-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--gold-light);
+    border-left: 3px solid var(--gold);
+    padding-left: 18px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .btn-gold:hover { background: var(--gold-light); }
+
+  .btn-outline {
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold-light);
+  }
+
+  .btn-outline:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); }
+
+  .hero-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--navy2) 0%, #1e3a5f 100%);
+    border: 3px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .hero-avatar::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .avatar-initials {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: -2px;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--navy2);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+  }
+
+  .stats-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .stat-item {
+    padding: 22px 20px;
+    text-align: center;
+    border-right: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .stat-item:last-child { border-right: none; }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* SECTIONS */
+  section { padding: 64px 2rem; }
+
+  .section-inner { max-width: 860px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .divider {
+    width: 48px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+    margin-bottom: 32px;
+  }
+
+  /* ABOUT / WIKIPEDIA STYLE */
+  #about { background: white; }
+
+  .wiki-box {
+    float: right;
+    width: 280px;
+    margin: 0 0 24px 32px;
+    border: 1px solid #d0c9b5;
+    background: #f8f5ee;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  .wiki-box-header {
+    background: var(--navy);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: center;
+  }
+
+  .wiki-avatar-area {
+    background: #e8e2d4;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d0c9b5;
+  }
+
+  .wiki-avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--navy2);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .wiki-table { width: 100%; border-collapse: collapse; }
+
+  .wiki-table td {
+    padding: 7px 12px;
+    border-top: 1px solid #d8d2c4;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .wiki-table td:first-child {
+    font-weight: 500;
+    color: #555;
+    width: 45%;
+    white-space: nowrap;
+  }
+
+  .wiki-table td:last-child { color: #222; }
+
+  .about-text p {
+    color: #374151;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .about-text p:first-child::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    float: left;
+    line-height: 0.85;
+    margin: 4px 8px 0 0;
+    color: var(--navy);
+  }
+
+  /* EXPERTISE */
+  #expertise { background: var(--cream); }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .expertise-card {
+    background: white;
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 6px;
+    padding: 24px 20px;
+    border-top: 3px solid var(--gold);
+    transition: transform 0.2s;
+  }
+
+  .expertise-card:hover { transform: translateY(-3px); }
+
+  .expertise-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(201,168,76,0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .expertise-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .expertise-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* VSCAN */
+  #vscan { background: var(--navy); color: white; }
+
+  #vscan .section-title { color: white; }
+
+  .vscan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .vscan-desc {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .vscan-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pillar {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .pillar-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    flex-shrink: 0;
+    min-width: 20px;
+  }
+
+  .pillar-text { font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.5; }
+
+  .pillar-text strong { color: white; display: block; font-size: 14px; margin-bottom: 2px; }
+
+  /* TIMELINE */
+  #experience { background: white; }
+
+  .timeline { position: relative; padding-left: 28px; }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.1));
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--gold);
+  }
+
+  .timeline-item.active .timeline-dot {
+    background: var(--gold);
+  }
+
+  .timeline-year {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .timeline-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+
+  .timeline-org {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .timeline-desc { font-size: 14px; color: #4b5563; line-height: 1.7; }
+
+  /* CONTACT */
+  #contact { background: var(--cream); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .contact-info p { font-size: 15px; color: #4b5563; line-height: 1.8; margin-bottom: 24px; }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--navy);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-label { font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; }
+  .contact-value { font-size: 14px; font-weight: 500; color: var(--navy); }
+
+  .inquiry-box {
+    background: white;
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 8px;
+    padding: 28px 24px;
+  }
+
+  .inquiry-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+
+  .form-row { margin-bottom: 16px; }
+
+  .form-row label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background: #fafafa;
+    color: var(--navy);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-row input:focus,
+  .form-row textarea:focus { border-color: var(--gold); }
+
+  .form-row textarea { height: 90px; resize: vertical; }
+
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 28px 2rem;
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer strong { color: var(--gold); }
+
+  @media (max-width: 640px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-avatar { display: none; }
+    .stats-inner { grid-template-columns: repeat(2,1fr); }
+    .wiki-box { float: none; width: 100%; margin: 0 0 24px; }
+    .vscan-grid, .contact-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">VKC</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#vscan">V Scan</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">Political Strategist & Governance Thinker</div>
+      <h1>Vikas Kumar <span>Choudhary</span></h1>
+      <div class="hero-title">Founder & CEO — V SCAN Alliance</div>
+      <div class="hero-quote">"Strategizing Governance. Empowering Democracy."</div>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#contact">Connect with Vikas</a>
+        <a class="btn btn-outline" href="#vscan">About V SCAN</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-initials">VK</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-number">10+</span>
+      <span class="stat-label">Indian States</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">15+</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">100+</span>
+      <span class="stat-label">Campaigns Shaped</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">1</span>
+      <span class="stat-label">Defining Vision</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">Biography</div>
+    <div class="section-title">About Vikas Kumar Choudhary</div>
+    <div class="divider"></div>
+
+    <div>
+      <!-- Wikipedia-style infobox -->
+      <div class="wiki-box">
+        <div class="wiki-box-header">Vikas Kumar Choudhary</div>
+        <div class="wiki-avatar-area">
+          <div class="wiki-avatar-circle">VK</div>
+        </div>
+        <table class="wiki-table">
+          <tr><td>Born</td><td>India</td></tr>
+          <tr><td>Nationality</td><td>Indian</td></tr>
+          <tr><td>Occupation</td><td>Political Strategist, Governance Consultant</td></tr>
+          <tr><td>Title</td><td>Founder & CEO</td></tr>
+          <tr><td>Organization</td><td>V SCAN Alliance</td></tr>
+          <tr><td>Full form</td><td>Vikas Strategic Citizens Accountability Network</td></tr>
+          <tr><td>Education</td><td>Journalism & Public Administration</td></tr>
+          <tr><td>States covered</td><td>10+ Indian states</td></tr>
+          <tr><td>Known for</td><td>Data-driven political campaigns, ethical governance strategy</td></tr>
+        </table>
+      </div>
+
+      <div class="about-text">
+        <p>Vikas Kumar Choudhary is a prominent Indian political strategist, governance thinker, and the Founder & CEO of V SCAN Alliance (Vikas Strategic Citizens Accountability Network) — a next-generation political consulting and policy firm committed to accountable governance and citizen-first leadership across India.</p>
+
+        <p>With extensive field experience spanning more than 10 Indian states, Vikas has emerged as one of India's distinguished voices in ethical and data-driven political consulting. He has successfully guided political parties and candidates to electoral victory by crafting strategic, research-backed, and value-driven campaigns — transforming political vision into public trust and popular mandate.</p>
+
+        <p>His leadership philosophy uniquely bridges grassroots realities with high-level strategic decision-making. Academically trained in Journalism and Public Administration, Vikas combines sharp communication instincts with deep policy understanding — a rare combination that enables him to craft narratives that resonate with both voters and governance frameworks.</p>
+
+        <p>Before founding V SCAN Alliance, Vikas held senior roles in leading political consultancies, where he shaped voter outreach programs and aligned campaign strategies with genuine governance objectives. His career represents a consistent mission: to make democracy more accountable, campaigns more honest, and governance more citizen-centric.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="section-inner">
+    <div class="section-label">Core Competencies</div>
+    <div class="section-title">Areas of Expertise</div>
+    <div class="divider"></div>
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <div class="expertise-icon">🗺️</div>
+        <h3>Election Strategy</h3>
+        <p>End-to-end campaign architecture from constituency mapping to voter mobilization across urban and rural India.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="expertise-icon">📊</div>
+        <h3>Data-Driven Campaigns</h3>
+        <p>Leveraging political data analytics, voter segmentation, and sentiment analysis for precision targeting.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="expertise-icon">🏛️</div>
+        <h3>Governance Consulting</h3>
+        <p>Bridging policy intent with public communication — ensuring governance translates into electoral trust.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="expertise-icon">📢</div>
+        <h3>Political Communication</h3>
+        <p>Crafting messaging, narratives, and media strategies rooted in journalism expertise and public discourse.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="expertise-icon">🤝</div>
+        <h3>Grassroots Mobilization</h3>
+        <p>Field experience across 10+ states building ground-level voter connect and party cadre alignment.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="expertise-icon">⚖️</div>
+        <h3>Ethical Politics</h3>
+        <p>Championing accountability-led campaigns that prioritize citizen welfare over mere electoral arithmetic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VSCAN -->
+<section id="vscan">
+  <div class="section-inner">
+    <div class="section-label" style="color: var(--gold-light);">The Organization</div>
+    <div class="section-title">V SCAN Alliance</div>
+    <div class="divider"></div>
+    <div class="vscan-grid">
+      <div>
+        <p class="vscan-desc">V SCAN Alliance — Vikas Strategic Citizens Accountability Network — is a next-generation political consulting and policy firm founded on the belief that democracy deserves better strategy, and citizens deserve better governance.</p>
+        <p class="vscan-desc">The firm specializes in ethical, data-driven, and research-backed political consulting — working with parties and candidates who wish to build durable public trust through honest campaigns and accountable governance.</p>
+        <a class="btn btn-outline" href="#contact" style="margin-top: 8px;">Partner with V SCAN</a>
+      </div>
+      <div class="vscan-pillars">
+        <div class="pillar">
+          <div class="pillar-letter">V</div>
+          <div class="pillar-text"><strong>Vikas Strategic</strong>Named after its founder's vision of growth-oriented political intelligence</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-letter">S</div>
+          <div class="pillar-text"><strong>Strategic</strong>Data-driven, research-backed campaign architecture</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-letter">C</div>
+          <div class="pillar-text"><strong>Citizens</strong>Citizen-first policy alignment and grassroots connect</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-letter">A</div>
+          <div class="pillar-text"><strong>Accountability</strong>Transparent governance and ethical campaign standards</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-letter">N</div>
+          <div class="pillar-text"><strong>Network</strong>Pan-India presence across 10+ states</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">Professional Journey</div>
+    <div class="section-title">Career Timeline</div>
+    <div class="divider"></div>
+    <div class="timeline">
+      <div class="timeline-item active">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">Present</div>
+        <div class="timeline-role">Founder & CEO</div>
+        <div class="timeline-org">V SCAN Alliance (Vikas Strategic Citizens Accountability Network)</div>
+        <div class="timeline-desc">Established and leading India's next-generation political consulting firm with operations across 10+ states, pioneering ethical and data-driven electoral strategies.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">Prior Experience</div>
+        <div class="timeline-role">Senior Strategist</div>
+        <div class="timeline-org">Leading Political Consultancies, India</div>
+        <div class="timeline-desc">Held senior roles shaping voter outreach programs, aligning campaign strategies with governance goals, and delivering electoral victories across multiple state elections.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">Academic Foundation</div>
+        <div class="timeline-role">Journalism & Public Administration</div>
+        <div class="timeline-org">Academic Training</div>
+        <div class="timeline-desc">Built dual expertise in political communication and public policy — the academic bedrock that distinguishes V SCAN's approach to governance consulting.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">Field Work</div>
+        <div class="timeline-role">Pan-India Field Operations</div>
+        <div class="timeline-org">10+ Indian States</div>
+        <div class="timeline-desc">Extensive grassroots work across diverse political landscapes — urban and rural constituencies — building deep understanding of India's voter psychology and regional dynamics.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">Get in Touch</div>
+    <div class="section-title">Connect with Vikas</div>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>For strategic consultations, speaking engagements, media inquiries, or partnership opportunities with V SCAN Alliance, reach out to Vikas Kumar Choudhary directly.</p>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Organization</div>
+            <div class="contact-value">V SCAN Alliance</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Operations</div>
+            <div class="contact-value">Pan-India (10+ States)</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Specialization</div>
+            <div class="contact-value">Political Strategy & Governance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inquiry-box">
+        <h3>Send an Inquiry</h3>
+        <div class="form-row">
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name">
+        </div>
+        <div class="form-row">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-row">
+          <label>Subject</label>
+          <input type="text" placeholder="How can Vikas help?">
+        </div>
+        <div class="form-row">
+          <label>Message</label>
+          <textarea placeholder="Describe your requirement..."></textarea>
+        </div>
+        <button class="btn btn-gold" style="width:100%; border:none; font-size:14px; padding:12px;" onclick="alert('Inquiry submitted! Vikas will be in touch shortly.')">Send Inquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Vikas Kumar Choudhary</strong> &nbsp;|&nbsp; Founder & CEO, V SCAN Alliance</p>
+  <p style="margin-top:6px; font-size:12px;">"Strategizing Governance. Empowering Democracy." &nbsp;·&nbsp; V SCAN Alliance © 2024</p>
+</footer>
+
+</body>
+</html>
